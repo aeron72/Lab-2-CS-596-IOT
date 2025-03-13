@@ -5,6 +5,10 @@ Members(Solo): Aeron Flores
 
 Video Demo Link: https://youtube.com/shorts/QYKyrLP9Luw?feature=share
 
+Circuit Top Down
+![Traffic Light](https://github.com/user-attachments/assets/10eec23e-92d7-4287-98fb-c4da9daf4a82)
+
+
 # 🚦 Traffic Light & Pedestrian Crossing System  
 
 This project is an **Arduino-based traffic light and pedestrian crossing system** using an **ESP32**, a **TFT LCD display**, and an **active buzzer**. The system simulates real-world traffic signals with a pedestrian push button to request crossing.
