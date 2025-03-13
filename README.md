@@ -3,7 +3,7 @@ Lab 2 traffic light for CS 596 IOT at SDSU.
 
 Members(Solo): Aeron Flores 
 
-Video Demo Link: https://youtube.com/shorts/QYKyrLP9Luw?feature=share
+Video Demo Link: https://youtube.com/shorts/miuDSU0FHsc?feature=share
 
 Circuit Top Down
 ![Traffic Light](https://github.com/user-attachments/assets/10eec23e-92d7-4287-98fb-c4da9daf4a82)
