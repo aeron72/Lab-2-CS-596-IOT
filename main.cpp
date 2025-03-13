@@ -28,30 +28,6 @@ const unsigned long  five_sec=5000;
 const unsigned long  two_sec =2000;
 
 TFT_eSPI tft= TFT_eSPI();
-
-
-void setup() 
-{
-  Serial.begin(11520);
-  //initialize i/o  
-  pinMode(LEDPIN_GREEN,OUTPUT);  
-  pinMode(LEDPIN_YELLOW,OUTPUT);
-  pinMode(LEDPIN_RED,OUTPUT);
-  pinMode(PUSH_BUTTON,INPUT);
-
-  //Make this work
-  tft.init();
-  tft.fillScreen(TFT_BLACK);  //erase all OLED
-  tft.setTextColor(TFT_GREEN,TFT_BLACK);
-  // Draw the three traffic light circles on the display
-  tft.drawCircle(66,120,30,TFT_YELLOW);
-  tft.drawCircle(66,30,30,TFT_RED);
-  tft.drawCircle(66,209,30,TFT_GREEN);
-  
-  
-}
-
-
 void soundgreen()
 {
   tone(BELL,800); // Play buzzer tone at 800 Hz
@@ -137,11 +113,38 @@ void green10()
   
 }
 
+void setup() 
+{
+  Serial.begin(11520);
+  //initialize i/o  
+  pinMode(LEDPIN_GREEN,OUTPUT);  
+  pinMode(LEDPIN_YELLOW,OUTPUT);
+  pinMode(LEDPIN_RED,OUTPUT);
+  pinMode(PUSH_BUTTON,INPUT);
+
+  tft.init();
+  tft.fillScreen(TFT_BLACK);  //erase all OLED
+  tft.setTextColor(TFT_GREEN,TFT_BLACK);
+  // Draw the three traffic light circles on the display
+  tft.drawCircle(66,120,30,TFT_YELLOW);
+  tft.drawCircle(66,30,30,TFT_RED);
+  tft.drawCircle(66,209,30,TFT_GREEN);
+
+  red(); //start up goes from red, yellow, green and stays there
+  yellow();
+  green10();
+  
+  
+}
+
+
+
+
 void loop() 
 {
   if(digitalRead(PUSH_BUTTON)==HIGH)  // read button if pushed
   {
-    delay(15); // debuff
+    delay(50); // debuff
     if(digitalRead(PUSH_BUTTON)==HIGH)
     {
       Serial.println("Wait 7 seconds to cross");
