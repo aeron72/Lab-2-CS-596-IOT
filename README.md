@@ -6,7 +6,7 @@ Members(Solo): Aeron Flores
 Video Demo Link: https://youtube.com/shorts/miuDSU0FHsc?feature=share
 
 Circuit Top Down
-![Traffic Light](https://github.com/user-attachments/assets/10eec23e-92d7-4287-98fb-c4da9daf4a82)
+![lab2update](https://github.com/user-attachments/assets/e3f4ae07-1587-49cd-98c4-914f3f948424)
 
 Files included:
 main.cpp, platform.ini
